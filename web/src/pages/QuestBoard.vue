@@ -1,5 +1,6 @@
 <script setup>
-import {ref, computed, onMounted} from 'vue'
+import {ref, computed, onMounted, onActivated} from 'vue'
+import { onBeforeRouteUpdate } from 'vue-router'
 
 const loading = ref(true)
 const quests = ref([])
@@ -114,7 +115,16 @@ function statusFrom(q) {
   return          { text: 'Not started', color: 'grey', icon: 'mdi-progress-helper' }
 }
 
-onMounted(() => { load(); loadUser() });
+function refresh() {
+  load()
+  loadUser()
+}
+
+onMounted(refresh)       // first time entering
+onActivated(refresh)     // if the page is wrapped in <keep-alive>
+onBeforeRouteUpdate((_to, _from, next) => {
+  Promise.all([load(), loadUser()]).finally(() => next())   // navigating to same component with different params
+})
 
 // (Optional) expose helpers so a parent or console can call them:
 // e.g. from devtools: $vm.applyRecipeCooked(['veggie'])

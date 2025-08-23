@@ -45,8 +45,13 @@ app.post('/api/quests/:id/progress', async (req, res) => {
 app.post('/api/events/recipe-cooked', async (req, res) => {
   const { recipeId, tags } = req.body || {}
   if (!Array.isArray(tags)) return res.status(400).json({ error: 'tags (array) required' })
-  const updated = await applyRecipeCooked({ recipeId, tags })
-  res.json({ updated })
+  try {
+    const result = await applyRecipeCooked({ recipeId, tags })
+    res.json(result)
+  } catch (e) {
+    console.error(e)
+    res.status(500).json({ error: 'failed to apply event' })
+  }
 })
 
 app.get('/api/food', async (_req, res) => {

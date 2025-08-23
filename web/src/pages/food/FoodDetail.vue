@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { useFoodStore } from '../../stores/foodStore';
+import { useFoodStore } from '../../stores/foodStore.js';
 import UiParentCard from "../../components/UiParentCard.vue";
 import Chatbox from "../../components/chatbox.vue";
 
@@ -31,11 +31,24 @@ const cookedDates = computed(() => {
 });
 
 function handleCooked() {
-  if (card.value) {
-    foodStore.markAsCooked(card.value.id);
-    if (!card.value.cookedHistory.length) {
-      router.push({ name: 'FoodList' });
-    }
+  if (!card.value) return
+
+  // 1) Tell backend a recipe with these tags was cooked
+  fetch('/api/events/recipe-cooked', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      recipeId: card.value.id,
+      tags: card.value.tags || []     // ← at least one tag overlap triggers quest updates
+    })
+  }).catch(() => {}) // ignore demo errors
+
+  // 2) Keep your local prototype behavior
+  foodStore.markAsCooked(card.value.id)
+
+  // 3) Navigate as you already do
+  if (!card.value.cookedHistory.length) {
+    router.push({ name: 'FoodList' }) // or to { name: 'quests' } if you prefer
   }
 }
 
