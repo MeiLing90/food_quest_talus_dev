@@ -18,6 +18,40 @@ app.get('/api/hello', (_req, res) => {
   res.json({ message: 'Hello from Express API 👋' });
 });
 
+const { readQuests, updateQuestProgress, applyRecipeCooked } = require('./store')
+
+// List quests from JSON
+app.get('/api/quests', async (_req, res) => {
+  try {
+    const items = await readQuests()
+    res.json({ items })
+  } catch (e) {
+    res.status(500).json({ error: 'Failed to read quests' })
+  }
+})
+
+// Directly set progress for a quest (useful for quick prototyping)
+app.post('/api/quests/:id/progress', async (req, res) => {
+  const { id } = req.params
+  const { progress } = req.body || {}
+  if (typeof progress !== 'number') return res.status(400).json({ error: 'progress (number) required' })
+  const q = await updateQuestProgress(id, progress)
+  if (!q) return res.status(404).json({ error: 'quest not found' })
+  res.json(q)
+})
+
+// Event: a recipe was cooked -> update relevant quests
+app.post('/api/events/recipe-cooked', async (req, res) => {
+  const { recipeId, tags } = req.body || {}
+  if (!Array.isArray(tags)) return res.status(400).json({ error: 'tags (array) required' })
+  try {
+    const updated = await applyRecipeCooked({ recipeId, tags })
+    res.json({ updated })
+  } catch (e) {
+    res.status(500).json({ error: 'failed to apply event' })
+  }
+})
+
 // --- Static (production) ---
 const publicDir = path.join(__dirname, '..', 'public');
 if (fs.existsSync(publicDir)) {
