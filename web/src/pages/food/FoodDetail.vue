@@ -59,6 +59,10 @@ const buttonText = computed(() =>
             <h2>Instructions</h2>
             <div v-html="card.instructions"></div>
           </v-card-text>
+
+          <v-card-actions class="justify-center">
+            <v-btn style="color: #56AB2F" @click="handleCooked">{{ buttonText }}</v-btn>
+          </v-card-actions>
         </v-col>
 
         <!-- Rechte Seite: Chatbox -->
@@ -73,10 +77,6 @@ const buttonText = computed(() =>
             <li v-for="(date, index) in cookedDates" :key="index">{{ date }}</li>
           </ul>
         </v-card-text>
-
-        <v-card-actions class="justify-center">
-          <v-btn style="color: #56AB2F" @click="handleCooked">{{ buttonText }}</v-btn>
-        </v-card-actions>
       </v-row>
     </v-container>
   </UiParentCard>
