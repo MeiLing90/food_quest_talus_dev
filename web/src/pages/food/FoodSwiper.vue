@@ -27,7 +27,7 @@ function voting() {
         <!-- BACK -->
         <v-card class="back" max-width="300">
           <v-card-text>
-            {{ foodStore.currentCard.description || 'Keine Rezepte mehr vorhanden' }}
+            {{ foodStore.currentCard.description || 'Keine Beschreibung vorhanden' }}
           </v-card-text>
         </v-card>
       </div>
@@ -54,7 +54,7 @@ function voting() {
     </div>
 
     <div v-else>
-      <p>Keine weiteren Karten</p>
+      <p>No more recipes</p>
       <v-btn @click="foodStore.resetStore()">Start Over</v-btn>
     </div>
   </v-container>
