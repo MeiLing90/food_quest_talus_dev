@@ -1,16 +1,18 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import FoodList from "./food/FoodList.vue";
-import Foodswiper from "./food/Foodswiper.vue";
-
+import AppNavbar from './components/AppNavbar.vue'
 </script>
 
 <template>
-  <foodswiper></foodswiper>
-  <food-list></food-list>
+  <v-app>
+    <AppNavbar />
+    <v-main>
+      <RouterView />
+    </v-main>
+  </v-app>
 </template>
 
 <style>
 html, body, #app { height: 100%; margin: 0; }
 code { background: #f7f7f7; padding: 2px 6px; border-radius: 6px; }
 </style>
+

@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "id": "q1",
+      "title": "Eat broccoli",
+      "summary": "Cook a meal with broccoli",
+      "difficulty": "Easy",
+      "tags": ["veggie"],
+      "progress": 0,
+      "reward": 20,
+      "image": "https://images.unsplash.com/photo-1614336215203-05a588f74627?q=80&w=1170&auto=format&fit=crop",
+      "status": "not-started"
+    },
+    {
+      "id": "q2",
+      "title": "Vegetarian days",
+      "summary": "Cook 3 veggie meals",
+      "difficulty": "Medium",
+      "tags": ["veggie", "healthy"],
+      "progress": 60,
+      "reward": 120,
+      "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1600&auto=format&fit=crop",
+      "status": "in-progress"
+    }
+  ]
+}
