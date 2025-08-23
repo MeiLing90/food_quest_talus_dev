@@ -1,5 +1,7 @@
 {
   "id": "demo",
-  "points": 0,
-  "completedQuestIds": []
+  "points": 20,
+  "completedQuestIds": [
+    "q1"
+  ]
 }

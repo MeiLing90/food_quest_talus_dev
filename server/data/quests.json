@@ -5,29 +5,41 @@
       "title": "Eat broccoli",
       "summary": "Cook a meal with broccoli",
       "difficulty": "Easy",
-      "tags": ["veggie", "broccoli"],
+      "tags": [
+        "vegetarian",
+        "broccoli"
+      ],
       "targetCount": 1,
-      "count": 0,
+      "count": 1,
       "reward": 20,
-      "image": "https://images.unsplash.com/photo-1614336215203-05a588f74627?auto=format&fit=crop&w=1170&q=80"
+      "image": "https://images.unsplash.com/photo-1614336215203-05a588f74627?auto=format&fit=crop&w=1170&q=80",
+      "progress": 100,
+      "status": "done"
     },
     {
       "id": "q2",
       "title": "Vegetarian days",
       "summary": "Cook 3 veggie meals",
       "difficulty": "Medium",
-      "tags": ["veggie", "healthy"],
+      "tags": [
+        "vegetarian",
+        "healthy"
+      ],
       "targetCount": 3,
-      "count": 0,
+      "count": 1,
       "reward": 120,
-      "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1600&q=80"
+      "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1600&q=80",
+      "progress": 33,
+      "status": "in-progress"
     },
     {
       "id": "q3",
       "title": "Pizza night",
       "summary": "Eat a pizza (any style)",
       "difficulty": "Easy",
-      "tags": ["pizza"],
+      "tags": [
+        "pizza"
+      ],
       "targetCount": 1,
       "count": 0,
       "reward": 50,
@@ -38,7 +50,12 @@
       "title": "Quinoa veggie bowl",
       "summary": "Cook a quinoa bowl with veggies",
       "difficulty": "Medium",
-      "tags": ["vegan", "whole-grain", "protein", "quinoa"],
+      "tags": [
+        "vegan",
+        "whole-grain",
+        "protein",
+        "quinoa"
+      ],
       "targetCount": 2,
       "count": 0,
       "reward": 90,
@@ -49,7 +66,12 @@
       "title": "Lentil & spinach dal",
       "summary": "Cook a fiber-rich lentil curry with spinach",
       "difficulty": "Easy",
-      "tags": ["vegan", "high-fiber", "spinach", "curry"],
+      "tags": [
+        "vegan",
+        "high-fiber",
+        "spinach",
+        "curry"
+      ],
       "targetCount": 1,
       "count": 0,
       "reward": 80,
@@ -60,7 +82,10 @@
       "title": "Mediterranean salad trio",
       "summary": "Prepare 3 different Mediterranean-style salads",
       "difficulty": "Medium",
-      "tags": ["mediterranean-salad", "healthy"],
+      "tags": [
+        "mediterranean-salad",
+        "healthy"
+      ],
       "targetCount": 3,
       "count": 0,
       "reward": 110,
@@ -71,7 +96,12 @@
       "title": "Overnight oats week",
       "summary": "Make overnight oats with fruit for 3 breakfasts",
       "difficulty": "Easy",
-      "tags": ["whole-grain", "breakfast", "fiber", "overnight-oats"],
+      "tags": [
+        "whole-grain",
+        "breakfast",
+        "fiber",
+        "overnight-oats"
+      ],
       "targetCount": 3,
       "count": 0,
       "reward": 70,
@@ -82,7 +112,11 @@
       "title": "Tofu stir-fry rainbow",
       "summary": "Stir-fry tofu with a mix of at least 4 veggies",
       "difficulty": "Medium",
-      "tags": ["vegan", "protein", "tofu"],
+      "tags": [
+        "vegan",
+        "protein",
+        "tofu"
+      ],
       "targetCount": 2,
       "count": 0,
       "reward": 95,
