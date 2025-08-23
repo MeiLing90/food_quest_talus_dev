@@ -56,6 +56,24 @@ const buttonText = computed(() =>
           <hr class="my-4">
 
           <v-card-text>
+            <h2>Ingredients</h2>
+            <ul>
+              <li v-for="ingredient in card.ingredients" :key="ingredient">
+                {{ ingredient }}
+              </li>
+            </ul>
+          </v-card-text>
+
+          <v-card-text>
+            <h2>Dietary Info</h2>
+            <ul>
+              <li v-for="tag in card.tags" :key="tags">
+                {{ tag }}
+              </li>
+            </ul>
+          </v-card-text>
+
+          <v-card-text>
             <h2>Instructions</h2>
             <div v-html="card.instructions"></div>
           </v-card-text>
