@@ -4,7 +4,6 @@ const props = defineProps({
 });
 </script>
 
-<!-- ===============================|| Ui Parent Card ||=============================== -->
 <template>
   <v-card
       elevation="6"
