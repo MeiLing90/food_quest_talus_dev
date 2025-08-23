@@ -64,14 +64,15 @@ function voting() {
 .flip-container {
   perspective: 1000px;
   width: 300px;
-  height: 450px; /* gleiche Höhe wie deine Karten */
+  min-height: 450px; /* gleiche Höhe wie deine Karten */
   cursor: pointer;
+  margin-bottom: 110px;
 }
 
 .flipper {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 113%;
   transition: 0.6s;
   transform-style: preserve-3d;
 }
