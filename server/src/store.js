@@ -72,33 +72,60 @@ async function updateQuestProgress(id, progress) {
 /** Prototype rule for recipe cooked event:
  * bump matching quests (by tags) to at least target% and award points if they reach "done".
  */
-async function applyRecipeCooked({ recipeId, tags = [], target = 80 }) {
+function computeFromCount(q) {
+    const target = Math.max(1, Number(q.targetCount || 1))
+    const count = Math.max(0, Number(q.count || 0))
+    const progress = Math.min(100, Math.round((count / target) * 100))
+    const status = count >= target ? 'done' : (count > 0 ? 'in-progress' : 'not-started')
+    return { progress, status }
+}
+
+/** Count-based: for each quest that shares at least one tag with the recipe, increment count by 1 */
+async function applyRecipeCooked({ recipeId, tags = [] }) {
     const items = await readQuests()
-    const lower = new Set(tags.map(t => String(t).toLowerCase()))
+    const user  = await readUser()
+
+    const lower = new Set((tags || []).map(t => String(t).toLowerCase()))
     const updated = []
+    let questsChanged = false
+    let userChanged   = false
 
     for (const q of items) {
         const qtags = (q.tags || []).map(t => String(t).toLowerCase())
-        const match = qtags.some(t => lower.has(t))
+        const match = qtags.some(t => lower.has(t))   // ✅ at least one tag overlap
         if (!match) continue
 
-        const wasDone = q.status === 'done'
-        q.progress = Math.max(q.progress || 0, target)
-        q.status = q.progress >= 100 ? 'done' : (q.progress > 0 ? 'in-progress' : 'not-started')
-        updated.push({ id: q.id, progress: q.progress, status: q.status })
+        const target = Math.max(1, Number(q.targetCount || 1))
+        const wasDone = (q.count || 0) >= target
 
-        if (!wasDone && q.status === 'done') {
-            await awardIfNewlyCompleted(q.id, q.reward)
+        q.count = Math.max(0, Number(q.count || 0) + 1)      // increment count
+        const { progress, status } = computeFromCount(q)
+        q.progress = progress                                  // (optional, but handy)
+        q.status   = status
+
+        updated.push({ id: q.id, count: q.count, targetCount: q.targetCount, progress, status })
+        questsChanged = true
+
+        // Award points once, the first time it crosses to "done"
+        if (!wasDone && q.count >= target) {
+            if (!user.completedQuestIds.includes(q.id)) {
+                user.completedQuestIds.push(q.id)
+                user.points += Number(q.reward || 0)
+                userChanged = true
+            }
         }
     }
-    if (updated.length) await writeQuests(items)
-    return updated
+
+    if (questsChanged) await writeQuests(items)
+    if (userChanged)   await writeUser(user)
+
+    return { updated, user }
 }
 
 module.exports = {
     readUser,
     readQuests,
     writeQuests,
-    updateQuestProgress,
+    updateQuestProgress, // keep if you still use it elsewhere
     applyRecipeCooked,
 }
