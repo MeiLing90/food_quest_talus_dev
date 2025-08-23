@@ -148,7 +148,7 @@ function scrollToBottom() {
 }
 .bubble.user {
   background: var(--v-theme-primary);
-  color: white;
+  color: black;
 }
 .bubble.bot {
   background: rgba(0,0,0,0.04);
