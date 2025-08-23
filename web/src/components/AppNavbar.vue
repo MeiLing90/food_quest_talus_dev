@@ -10,14 +10,14 @@ const links = [
   <v-app-bar elevation="2" color="white" density="comfortable">
     <!-- Left: brand -->
     <RouterLink to="/" class="brand d-flex align-center text-decoration-none">
-      <v-icon size="28" class="me-2">mdi-fire</v-icon>
-      <span class="brand-name">FoodQuest</span>
+      <img src="/src/assets/logo.png" alt="FoodQuest" height="28" class="me-2 ml-4" />
+      <span class="brand-name" style="color: #56AB2F">FoodQuest</span>
     </RouterLink>
 
     <v-spacer />
 
     <!-- Right: actions -->
-    <nav class="d-flex align-center ga-1">
+    <nav class="d-flex align-center ga-1 mr-4">
       <v-btn
           v-for="l in links"
           :key="l.to"
