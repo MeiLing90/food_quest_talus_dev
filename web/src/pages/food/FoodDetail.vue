@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { useFoodStore } from '../../stores/foodStore';
+import { useFoodStore } from '../../stores/foodStore.js';
 import UiParentCard from "../../components/UiParentCard.vue";
 import Chatbox from "../../components/chatbox.vue";
 
