@@ -37,6 +37,7 @@ const foodStore = useFoodStore();
       </v-row>
     </div>
 
+
     <div v-else>
       <p>Keine weiteren Karten</p>
       <v-btn @click="foodStore.resetStore()">Start Over</v-btn>
