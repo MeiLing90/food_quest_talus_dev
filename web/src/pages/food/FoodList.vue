@@ -1,5 +1,5 @@
 <script setup>
-import { useFoodStore } from '../stores/foodStore'; // Adjust path if needed
+import { useFoodStore } from '../../stores/foodStore'; // Adjust path if needed
 
 const foodStore = useFoodStore();
 </script>
