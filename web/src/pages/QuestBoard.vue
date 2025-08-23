@@ -12,10 +12,12 @@ const filtered = computed(() => {
           x.title.toLowerCase().includes(q.value.toLowerCase()) ||
           (x.tags || []).some(t => t.toLowerCase().includes(q.value.toLowerCase()))
   )
-  if (sortBy.value === 'progress') list = [...list].sort((a, b) => (b.progress || 0) - (a.progress || 0))
+  if (sortBy.value === 'progress') list = [...list].sort((a, b) => pct(b) - pct(a))
   else if (sortBy.value === 'reward') list = [...list].sort((a, b) => (b.reward || 0) - (a.reward || 0))
   return list
 })
+
+const user = ref({ points: 0 });
 
 async function load() {
   loading.value = true
@@ -92,7 +94,27 @@ async function setQuestProgress(id, progress) {
   }
 }
 
-onMounted(load)
+async function loadUser() {
+  try {
+    const res = await fetch('/api/user')
+    user.value = await res.json()
+  } catch { user.value = { points: 0 } }
+}
+
+function pct(q) {
+  const total = Math.max(1, q.targetCount || 1)
+  const cnt = Math.max(0, q.count || 0)
+  return Math.min(100, Math.round((cnt / total) * 100))
+}
+
+function statusFrom(q) {
+  const p = pct(q)
+  if (p >= 100) return { text: 'Done', color: 'green', icon: 'mdi-check-circle' }
+  if (p > 0)    return { text: 'In progress', color: 'amber', icon: 'mdi-progress-clock' }
+  return          { text: 'Not started', color: 'grey', icon: 'mdi-progress-helper' }
+}
+
+onMounted(() => { load(); loadUser() });
 
 // (Optional) expose helpers so a parent or console can call them:
 // e.g. from devtools: $vm.applyRecipeCooked(['veggie'])
@@ -103,6 +125,9 @@ defineExpose({applyRecipeCooked, setQuestProgress, reload: load})
   <v-container class="py-8">
     <div class="d-flex flex-wrap align-center mb-6 ga-3">
       <h2 class="text-h5 mb-0">Quest Board</h2>
+      <v-chip color="primary" variant="flat" prepend-icon="mdi-star" class="ms-2">
+        {{ user.points }} pts
+      </v-chip>
       <v-spacer></v-spacer>
       <v-text-field
           v-model="q"
@@ -161,14 +186,18 @@ defineExpose({applyRecipeCooked, setQuestProgress, reload: load})
               </v-chip>
             </div>
 
-            <div class="d-flex align-center" v-if="(qt.progress || 0) > 0">
-              <v-progress-linear :model-value="qt.progress" height="8" rounded class="flex-grow-1 me-2"/>
-              <span class="text-caption">{{ qt.progress }}%</span>
+            <div class="d-flex align-center" v-if="(qt.count || 0) > 0">
+              <v-progress-linear :model-value="pct(qt)" height="8" rounded class="flex-grow-1 me-2" />
+              <span class="text-caption">{{ pct(qt) }}%</span>
+            </div>
+            <!-- show explicit count for multi-recipe quests -->
+            <div v-if="(qt.targetCount || 1) > 1" class="text-caption mt-1">
+              {{ qt.count || 0 }} / {{ qt.targetCount }} recipes
             </div>
           </v-card-text>
           <v-card-actions>
-            <v-chip :color="statusMeta(qt.status).color" variant="tonal" :prepend-icon="statusMeta(qt.status).icon">
-              {{ statusMeta(qt.status).text }}
+            <v-chip :color="statusFrom(qt).color" variant="tonal" :prepend-icon="statusFrom(qt).icon">
+              {{ statusFrom(qt).text }}
             </v-chip>
 
             <v-spacer/>

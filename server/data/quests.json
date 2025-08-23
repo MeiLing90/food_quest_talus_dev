@@ -6,10 +6,10 @@
       "summary": "Cook a meal with broccoli",
       "difficulty": "Easy",
       "tags": ["veggie"],
-      "progress": 0,
+      "targetCount": 1,
+      "count": 0,
       "reward": 20,
-      "image": "https://images.unsplash.com/photo-1614336215203-05a588f74627?q=80&w=1170&auto=format&fit=crop",
-      "status": "not-started"
+      "image": "https://images.unsplash.com/photo-1614336215203-05a588f74627?auto=format&fit=crop&w=1170&q=80"
     },
     {
       "id": "q2",
@@ -17,10 +17,76 @@
       "summary": "Cook 3 veggie meals",
       "difficulty": "Medium",
       "tags": ["veggie", "healthy"],
-      "progress": 60,
+      "targetCount": 3,
+      "count": 0,
       "reward": 120,
-      "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1600&auto=format&fit=crop",
-      "status": "in-progress"
+      "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "q3",
+      "title": "Pizza night",
+      "summary": "Eat a pizza (any style)",
+      "difficulty": "Easy",
+      "tags": ["pizza"],
+      "targetCount": 1,
+      "count": 0,
+      "reward": 50,
+      "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "q4",
+      "title": "Quinoa veggie bowl",
+      "summary": "Cook a quinoa bowl with at least 3 colorful veggies",
+      "difficulty": "Medium",
+      "tags": ["vegan", "whole-grain", "protein"],
+      "targetCount": 2,
+      "count": 0,
+      "reward": 90,
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "q5",
+      "title": "Lentil & spinach dal",
+      "summary": "Cook a fiber-rich lentil curry with spinach",
+      "difficulty": "Easy",
+      "tags": ["vegan", "high-fiber", "legumes"],
+      "targetCount": 1,
+      "count": 0,
+      "reward": 80,
+      "image": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "q6",
+      "title": "Mediterranean salad trio",
+      "summary": "Prepare 3 different Mediterranean-style salads",
+      "difficulty": "Medium",
+      "tags": ["salad", "mediterranean", "healthy"],
+      "targetCount": 3,
+      "count": 0,
+      "reward": 110,
+      "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "q7",
+      "title": "Overnight oats week",
+      "summary": "Make overnight oats with fruit for 3 breakfasts",
+      "difficulty": "Easy",
+      "tags": ["whole-grain", "breakfast", "fiber"],
+      "targetCount": 3,
+      "count": 0,
+      "reward": 70,
+      "image": "https://images.unsplash.com/photo-1506086679524-493c64fdfaa6?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "q8",
+      "title": "Tofu stir-fry rainbow",
+      "summary": "Stir-fry tofu with a mix of at least 4 veggies",
+      "difficulty": "Medium",
+      "tags": ["vegan", "protein", "stir-fry"],
+      "targetCount": 2,
+      "count": 0,
+      "reward": 95,
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1600&q=80"
     }
   ]
 }
