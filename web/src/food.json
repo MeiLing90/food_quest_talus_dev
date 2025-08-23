@@ -141,7 +141,7 @@
       "Eggs",
       "Milk",
       "Salt",
-      "Cheese (Emmental/Gruyère)",
+      "Cheese",
       "Onions",
       "Butter"
     ],
@@ -168,7 +168,7 @@
     "image": "https://recipeimages.migros.ch/crop/v-w-1600-h-1200-a-center_center/774fa51b4160c501ef41d3638fc67f1316e1b45f/tofu-stir-fry-0-4-3.jpg",
     "selected": false,
     "cooked": false,
-    "tags": ["vegan", "vegetables", "fiber", "high protein (plant-based)", "low calory", "dinner"]
+    "tags": ["vegan", "vegetables", "fiber", "high protein", "low calory", "dinner"]
   },
   {
     "id": 10,
@@ -188,7 +188,7 @@
     "image": "https://cookieandkate.com/images/2019/01/best-lentil-soup-recipe-4.jpg",
     "selected": false,
     "cooked": false,
-    "tags": ["vegan", "vegetarian", "fiber", "high protein (plant-based)", "comfort food", "low fat", "soup", "dinner"]
+    "tags": ["vegan", "vegetarian", "fiber", "high protein", "comfort food", "low fat", "soup", "dinner"]
   },
   {
     "id": 11,
@@ -394,7 +394,7 @@
       "american",
       "comfort food",
       "dinner",
-      "high protein (plant-based)",
+      "high protein",
       "lunch",
       "vegan option",
       "vegetarian"
@@ -636,7 +636,7 @@
       "comfort food",
       "dinner",
       "high fiber",
-      "high protein (plant-based)",
+      "high protein",
       "italian",
       "vegetables",
       "vegetarian"
