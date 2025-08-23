@@ -18,19 +18,20 @@ app.get('/api/hello', (_req, res) => {
   res.json({ message: 'Hello from Express API 👋' });
 });
 
-const { readQuests, updateQuestProgress, applyRecipeCooked } = require('./store')
+const { readUser, updateQuestProgress, applyRecipeCooked, readQuests } = require('./store')
 
-// List quests from JSON
-app.get('/api/quests', async (_req, res) => {
-  try {
-    const items = await readQuests()
-    res.json({ items })
-  } catch (e) {
-    res.status(500).json({ error: 'Failed to read quests' })
-  }
+// points / profile
+app.get('/api/user', async (_req, res) => {
+  const user = await readUser()
+  res.json(user)
 })
 
-// Directly set progress for a quest (useful for quick prototyping)
+// list quests from JSON (if you don't already have this)
+app.get('/api/quests', async (_req, res) => {
+  res.json({ items: await readQuests() })
+})
+
+// set quest progress (awards points if it becomes done)
 app.post('/api/quests/:id/progress', async (req, res) => {
   const { id } = req.params
   const { progress } = req.body || {}
@@ -40,20 +41,13 @@ app.post('/api/quests/:id/progress', async (req, res) => {
   res.json(q)
 })
 
-// Event: a recipe was cooked -> update relevant quests
+// recipe cooked event (may bump progress and award points)
 app.post('/api/events/recipe-cooked', async (req, res) => {
   const { recipeId, tags } = req.body || {}
   if (!Array.isArray(tags)) return res.status(400).json({ error: 'tags (array) required' })
-  try {
-    const updated = await applyRecipeCooked({ recipeId, tags })
-    res.json({ updated })
-  } catch (e) {
-    res.status(500).json({ error: 'failed to apply event' })
-  }
+  const updated = await applyRecipeCooked({ recipeId, tags })
+  res.json({ updated })
 })
-
-const fs = require('fs').promises;
-const path = require('path');
 
 app.get('/api/food', async (_req, res) => {
   try {

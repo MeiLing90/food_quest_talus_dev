@@ -1,6 +1,6 @@
 <script setup>
 const links = [
-  { to: '/',        label: 'Swipe',  icon: 'mdi-fire' },
+  { to: '/',        label: 'Recipes',  icon: 'mdi-fire' },
   { to: '/quests',  label: 'Quests', icon: 'mdi-star-outline' },
   // add more when you have routes (e.g. messages/profile)
 ]
