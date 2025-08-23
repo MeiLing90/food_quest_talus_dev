@@ -1,18 +1,16 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 
-import { computed } from 'vue'
-import cardsData from '../../food.json'
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+import { useFoodStore } from '../../stores/foodStore'; // Import your Pinia store
 import UiParentCard from "../../components/UiParentCard.vue";
 
-// ID aus URL holen
-const urlParams = new URLSearchParams(window.location.search)
-const id = urlParams.get("id") ?? "1"   // fallback = 1
+const route = useRoute();
+const foodStore = useFoodStore();
 
 const card = computed(() =>
-    cardsData.find(c => String(c.id) === id)
-)
-
+    foodStore.allCards.find(c => String(c.id) === route.params.id)
+);
 
 </script>
 
