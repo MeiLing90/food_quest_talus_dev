@@ -1,0 +1,43 @@
+services:
+  # Development: API server (Express + nodemon)
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    profiles: ["dev"]
+    environment:
+      - NODE_ENV=development
+      - PORT=5000
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+
+  # Development: Vite + Vue dev server with proxy to API
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    profiles: ["dev"]
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./web:/app
+      - /app/node_modules
+    depends_on:
+      - server
+
+  # Production: single container that serves built Vue app + API from Express
+  app:
+    build:
+      context: .
+      dockerfile: server/Dockerfile.prod
+    profiles: ["prod"]
+    environment:
+      - NODE_ENV=production
+      - PORT=8080
+    ports:
+      - "8080:8080"
