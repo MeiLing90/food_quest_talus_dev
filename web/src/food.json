@@ -141,7 +141,7 @@
       "Eggs",
       "Milk",
       "Salt",
-      "Cheese (Emmental/Gruyère)",
+      "Cheese",
       "Onions",
       "Butter"
     ],
@@ -188,7 +188,7 @@
     "image": "https://cookieandkate.com/images/2019/01/best-lentil-soup-recipe-4.jpg",
     "selected": false,
     "cooked": false,
-    "tags": ["vegan", "vegetarian", "fiber", "high protein (plant-based)", "comfort food", "low fat", "soup", "dinner"]
+    "tags": ["vegan", "vegetarian", "fiber", "high protein", "comfort food", "low fat", "soup", "dinner"]
   },
   {
     "id": 11,
@@ -394,7 +394,7 @@
       "american",
       "comfort food",
       "dinner",
-      "high protein (plant-based)",
+      "high protein",
       "lunch",
       "vegan option",
       "vegetarian"
@@ -636,7 +636,7 @@
       "comfort food",
       "dinner",
       "high fiber",
-      "high protein (plant-based)",
+      "high protein",
       "italian",
       "vegetables",
       "vegetarian"
