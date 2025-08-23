@@ -30,3 +30,4 @@ const cards = ref(cardsData);
     object-fit: cover;
 }
 </style>
+

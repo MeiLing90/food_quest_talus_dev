@@ -182,3 +182,4 @@ defineExpose({applyRecipeCooked, setQuestProgress, reload: load})
     </v-row>
   </v-container>
 </template>
+

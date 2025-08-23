@@ -11,3 +11,4 @@ pinia.use(piniaPluginPersistedstate);
 app.use(pinia);
 
 createApp(App).use(vuetify).mount('#app')
+
