@@ -52,6 +52,20 @@ app.post('/api/events/recipe-cooked', async (req, res) => {
   }
 })
 
+const fs = require('fs').promises;
+const path = require('path');
+
+app.get('/api/food', async (_req, res) => {
+  try {
+    const file = path.join(__dirname, '..', 'data', 'food.json');
+    const raw = await fs.readFile(file, 'utf-8');
+    res.setHeader('Content-Type', 'application/json');
+    res.send(raw); // send as-is to avoid extra parse/stringify
+  } catch (e) {
+    res.status(500).json({ error: 'Failed to load food data' });
+  }
+});
+
 // --- Static (production) ---
 const publicDir = path.join(__dirname, '..', 'public');
 if (fs.existsSync(publicDir)) {

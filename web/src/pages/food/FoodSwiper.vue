@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed  } from 'vue';
 
-import cardsData from '../food.json';
+import cardsData from '../../food.json';
 
 const cards = ref(cardsData);
 

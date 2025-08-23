@@ -2,8 +2,8 @@
 import { ref } from 'vue';
 
 import { computed } from 'vue'
-import cardsData from '../food.json'
-import UiParentCard from "../components/UiParentCard.vue";
+import cardsData from '../../food.json'
+import UiParentCard from "../../components/UiParentCard.vue";
 
 // ID aus URL holen
 const urlParams = new URLSearchParams(window.location.search)

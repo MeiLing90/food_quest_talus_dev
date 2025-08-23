@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import cardsData from '../food.json';
+import cardsData from '../../food.json';
 
 const cards = ref(cardsData);
 </script>

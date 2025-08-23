@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import FoodList from "./food/FoodList.vue";
-import Foodswiper from "./food/Foodswiper.vue";
+import FoodList from "./pages/food/FoodList.vue";
+import Foodswiper from "./pages/food/FoodSwiper.vue";
 
 </script>
 
