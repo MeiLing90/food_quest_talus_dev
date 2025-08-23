@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<body>
+<div id="app"></div>
+<script type="module">
+    import { createApp } from 'vue'
+    import QuestsPage from '/src/QuestBoard.vue'
+
+    import 'vuetify/styles'
+    import { createVuetify } from 'vuetify'
+    import { aliases, mdi } from 'vuetify/iconsets/mdi'
+    import '@mdi/font/css/materialdesignicons.css'
+
+    const vuetify = createVuetify({ icons: { defaultSet: 'mdi', aliases, sets: { mdi } } })
+    createApp(QuestsPage).use(vuetify).mount('#app')
+</script>
+</body>
+</html>
