@@ -2,36 +2,217 @@
   {
     "id": 1,
     "name": "Spaghetti Bolognese",
-    "description": "Text Text Text Text Text Text Text Text Text Text Text Text",
+    "description": "A classic Italian pasta dish made with a rich and hearty meat sauce.  The sauce, or 'ragù,' is slow-cooked for a deep, savory flavor, often including minced beef, onions, carrots, and celery, simmered in a tomato base.",
+    "instructions": "1. **Sauté vegetables:** Heat olive oil in a large pot or Dutch oven. Add chopped onions, carrots, and celery, and cook until softened. 2. **Brown meat:** Add ground beef and cook until browned, breaking it up with a spoon. Drain excess fat. 3. **Simmer the sauce:** Stir in crushed tomatoes, beef broth, a splash of red wine (optional), and herbs like bay leaves and oregano. Bring to a simmer, then reduce heat, cover, and let it cook for at least 1-2 hours to allow flavors to meld. 4. **Cook pasta:** Boil spaghetti in salted water according to package directions. 5. **Serve:** Drain the spaghetti and serve topped with a generous portion of the bolognese sauce and grated Parmesan cheese.",
     "image": "https://images.ctfassets.net/uexfe9h31g3m/6QtnhruEFi8qgEyYAICkyS/ab01e9b1da656f35dd1a721c810162a0/Spaghetti_bolognese_4x3_V2_LOW_RES.jpg?w=2000&h=2000&fm=webp&fit=thumb&q=100",
     "selected": false
   },
   {
     "id": 2,
     "name": "Tomatenrisotto",
-    "description": "Text Text Text Text Text Text Text Text Text Text Text Text",
+    "description": "A creamy and comforting Italian rice dish where Arborio rice is slowly cooked with vegetable broth and a flavorful tomato base. It’s a simple yet elegant meal that's perfect for a weeknight dinner.",
+    "instructions": "1. **Sauté:** In a pot, cook chopped shallots or onions in olive oil until translucent. Add the Arborio rice and toast for 1-2 minutes until slightly transparent. 2. **Deglaze:** Pour in a splash of white wine and cook until it’s absorbed. 3. **Add broth:** Begin adding warm vegetable broth, one ladle at a time, stirring constantly. Wait for the liquid to be absorbed before adding the next ladle. 4. **Incorporate tomatoes:** After about 10-15 minutes, stir in tomato purée or chopped fresh tomatoes. Continue adding broth and stirring until the risotto is al dente and creamy. 5. **Finish:** Remove from heat and stir in grated Parmesan cheese and a knob of butter for extra creaminess. Season with salt and pepper.",
     "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2160,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2019/12/LM200910_59_Tomatenrisotto-2560x1707.jpg",
     "selected": false
   },
   {
     "id": 3,
     "name": "Honig-Pouletgeschnetzeltes mit Gemüse",
-    "description": "Text Text Text Text Text Text Text Text Text Text Text Text",
+    "description": "A quick and delicious stir-fry of sliced chicken and fresh vegetables tossed in a sweet and savory honey-soy sauce. It’s a healthy meal that can be prepared in under 30 minutes.",
+    "instructions": "1. **Prepare chicken:** Cut chicken breast into thin strips. In a bowl, whisk together honey, soy sauce, garlic, and ginger. Add the chicken strips and marinate for at least 15 minutes. 2. **Stir-fry:** Heat a wok or large skillet over high heat. Add a little oil and stir-fry the chicken until cooked through. 3. **Add vegetables:** Add your choice of vegetables (e.g., bell peppers, broccoli florets, snap peas) and stir-fry for a few minutes until they are crisp-tender. 4. **Finish:** Pour the remaining marinade over the chicken and vegetables, and cook for another minute until the sauce thickens slightly. Serve immediately over rice or noodles.",
     "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2160,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2020/10/KO2020_SBLV_78_Honig-Pouletgeschnetzeltes_mit_Gemu%E2%95%A0%C3%AAse.jpg",
     "selected": false
   },
   {
     "id": 4,
     "name": "Linsen-Dal",
-    "description": "Text Text Text Text Text Text Text Text Text Text Text Text",
+    "description": "A comforting and protein-rich Indian lentil stew.  This vegetarian dish is made with red lentils, flavored with a blend of aromatic spices like turmeric, cumin, and ginger, and is typically served with rice.",
+    "instructions": "1. **Rinse lentils:** Rinse the red lentils thoroughly under cold water. 2. **Cook lentils:** In a pot, combine the lentils, water or vegetable broth, and turmeric. Bring to a boil, then reduce heat and simmer until the lentils are soft and have broken down. 3. **Prepare tadka:** In a small frying pan, heat ghee or oil. Add mustard seeds, cumin seeds, and finely chopped garlic and ginger. Cook until fragrant. 4. **Combine:** Pour the seasoned oil (tadka) over the cooked lentils. Stir well and season with salt. 5. **Serve:** Garnish with fresh cilantro and serve hot with basmati rice or naan bread.",
     "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2160,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2023/12/SM2023_DIVE_114_linsen-dal-2560x1708.jpg",
     "selected": false
   },
   {
     "id": 5,
     "name": "Gnocchi mit Tomatensauce",
-    "description": "Text Text Text Text Text Text Text Text Text Text Text Text",
+    "description": "Soft potato gnocchi tossed in a simple, vibrant tomato sauce. This is a quick and satisfying vegetarian meal that highlights the fresh flavors of tomatoes and basil.",
+    "instructions": "1. **Prepare sauce:** In a saucepan, heat olive oil and sauté minced garlic until fragrant. Add canned crushed tomatoes, a pinch of sugar, and salt and pepper. Simmer for 15-20 minutes. 2. **Cook gnocchi:** Bring a large pot of salted water to a boil. Add the gnocchi and cook until they float to the surface (usually 2-3 minutes). 3. **Combine:** Use a slotted spoon to transfer the cooked gnocchi directly into the simmering tomato sauce. Stir gently to coat. 4. **Serve:** Garnish with fresh basil leaves and a sprinkle of grated Parmesan cheese.",
     "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2160,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2024/03/SM2024_FAMI_01_Gnocchi-mit-Tomatensauce-2560x1708.jpg",
+    "selected": false
+  },
+  {
+    "id": 6,
+    "name": "Couscous-Salat",
+    "description": "A light and refreshing salad with fluffy couscous, fresh vegetables, and herbs. It's a versatile dish that's perfect for a healthy lunch or as a side.",
+    "instructions": "1. **Prepare couscous:** Place couscous in a bowl. Pour hot vegetable broth or water over it, cover, and let it sit for 5 minutes until the liquid is absorbed. Fluff with a fork. 2. **Chop vegetables:** Finely chop cucumber, tomatoes, red onion, and fresh mint and parsley. 3. **Dress the salad:** In a small bowl, whisk together olive oil, lemon juice, salt, and pepper. 4. **Combine:** Add the chopped vegetables and herbs to the cooled couscous. Pour the dressing over the salad and toss to combine. Serve chilled.",
+    "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2592,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2024/03/LM200705_56_B_Couscous-Salat.jpg  ",
+    "selected": false
+  },
+  {
+    "id": 7,
+    "name": "Poulet-Curry",
+    "description": "A fragrant and creamy chicken curry simmered in a rich sauce of coconut milk and spices. It’s a delicious and comforting meal that pairs well with rice or naan bread.",
+    "instructions": "1. **Sauté aromatics:** In a pot, sauté chopped onions, garlic, and ginger until soft. Add curry powder, turmeric, and cumin, and cook for 1 minute until fragrant. 2. **Add chicken:** Add bite-sized chicken pieces and cook until lightly browned. 3. **Simmer:** Pour in coconut milk and chicken broth. Bring to a simmer, then reduce heat and cook for 15-20 minutes until the chicken is cooked through and the sauce has thickened. 4. **Finish:** Stir in a handful of fresh spinach and cook until wilted. Season with salt and pepper. Serve hot.",
+    "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2592,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2023/02/SM2023_SUGR_02_Curry-Pouletgeschnetzeltes_Hauptbild.jpg",
+    "selected": false
+  },
+  {
+    "id": 8,
+    "name": "Käsespätzli",
+    "description": "A hearty and cheesy Swiss dish similar to macaroni and cheese. It consists of small, soft noodles (Spätzli) mixed with melted cheese and often topped with crispy fried onions. ",
+    "instructions": "1. **Make dough:** Mix flour, eggs, milk, and salt to form a smooth dough. 2. **Cook Spätzli:** Using a Spätzli maker or a colander, press the dough into boiling salted water. The Spätzli are cooked when they float to the top. Remove with a slotted spoon. 3. **Layer:** In a baking dish, create alternating layers of Spätzli and grated cheese (like Emmental or Gruyère). 4. **Bake:** Bake in a preheated oven at 200°C (400°F) until the cheese is melted and bubbly. 5. **Fry onions:** While the Spätzli are baking, slice onions and fry them in butter until golden brown and crispy. 6. **Serve:** Top the hot Käsespätzli with the crispy onions and serve immediately.",
+    "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2592,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2019/12/LM201311_73_Kaesespaetzli-2560x1707.jpg",
+    "selected": false
+  },
+  {
+    "id": 9,
+    "name": "Tofu Stir-fry",
+    "description": "A quick and healthy vegan dish with crispy tofu and assorted vegetables in a savory sauce. It's a versatile meal where you can use any seasonal vegetables you have on hand.",
+    "instructions": "1. **Press tofu:** Press a block of extra-firm tofu to remove excess water. Cut into cubes. 2. **Marinate:** Toss the tofu cubes with cornstarch and a little soy sauce. 3. **Cook tofu:** Heat oil in a wok or large skillet over medium-high heat. Add tofu and cook until golden brown and crispy on all sides. Remove from pan. 4. **Stir-fry vegetables:** Add more oil and stir-fry your choice of vegetables (e.g., bell peppers, broccoli, carrots) for 3-5 minutes. 5. **Make sauce:** In a small bowl, whisk together soy sauce, rice vinegar, a sweetener, ginger, and garlic. 6. **Combine:** Return the crispy tofu to the pan. Pour the sauce over the tofu and vegetables and toss to coat. Serve immediately with rice.",
+    "image": "https://recipeimages.migros.ch/crop/v-w-1600-h-1200-a-center_center/774fa51b4160c501ef41d3638fc67f1316e1b45f/tofu-stir-fry-0-4-3.jpg",
+    "selected": false
+  },
+  {
+    "id": 10,
+    "name": "Hearty Lentil Soup",
+    "description": "A nutritious and filling soup packed with vegetables and lentils, perfect for a cold day. This one-pot meal is easy to make and full of comforting flavor.",
+    "instructions": "1. **Sauté aromatics:** In a large pot, heat olive oil and cook chopped onions, carrots, and celery until softened. Add minced garlic and cook until fragrant. 2. **Add ingredients:** Stir in dried lentils, vegetable broth, diced tomatoes, and spices like cumin and coriander. 3. **Simmer:** Bring the soup to a boil, then reduce heat and simmer for 25-30 minutes, or until the lentils are tender. 4. **Finish:** Season with salt and pepper. For a thicker consistency, you can use an immersion blender to partially purée the soup. Serve hot, garnished with fresh parsley.",
+    "image": "https://cookieandkate.com/images/2019/01/best-lentil-soup-recipe-4.jpg",
+    "selected": false
+  },
+  {
+    "id": 11,
+    "name": "Thai Green Curry",
+    "description": "A fragrant and aromatic Thai curry with a blend of green chili, coconut milk, and fresh herbs. It’s a bold and flavorful dish that can be customized with your choice of protein.",
+    "instructions": "1. **Prepare curry base:** In a pot, heat a tablespoon of oil. Add 2-3 tablespoons of Thai green curry paste and cook for one minute until fragrant. 2. **Add liquid:** Pour in a can of coconut milk and stir until the curry paste is fully dissolved. Bring to a gentle simmer. 3. **Add protein and vegetables:** Add bite-sized pieces of chicken, shrimp, or tofu along with your favorite vegetables (e.g., bamboo shoots, bell peppers, Thai basil). 4. **Cook:** Simmer for 10-15 minutes, or until the protein is cooked through and the vegetables are tender. 5. **Season:** Add a splash of fish sauce (or soy sauce for a vegan version) and a little sugar to balance the flavors. Serve hot with jasmine rice.",
+    "image": "https://recipeimages.migros.ch/crop/v-w-4000-h-3000-a-center_center/3888847ade702a69450e915705666b4056498832/green-thai-curry-chicken-0-4-3.jpg",
+    "selected": false
+  },
+  {
+    "id": 12,
+    "name": "Spaghetti Carbonara",
+    "description": "A Roman pasta dish made with a creamy sauce from eggs, hard cheese, and a salty, cured pork like guanciale or pancetta. It’s a simple but incredibly rich and satisfying meal that comes together quickly.",
+    "instructions": "1. **Cook pasta:** Boil spaghetti in salted water according to package directions. 2. **Prepare pork:** While the pasta cooks, cut guanciale or pancetta into small cubes and fry in a pan until crispy. 3. **Make sauce:** In a bowl, whisk together two large eggs and one egg yolk, grated Pecorino Romano or Parmesan cheese, and freshly ground black pepper. 4. **Combine:** Drain the cooked spaghetti, reserving a little pasta water. Quickly add the hot pasta to the pan with the crispy pork (off the heat). 5. **Stir in eggs:** Pour the egg and cheese mixture over the pasta, tossing vigorously to coat everything evenly. The heat from the pasta will cook the eggs into a creamy sauce. Add a little reserved pasta water to reach your desired consistency. Serve immediately.",
+    "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2592,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2019/06/spaghetti-carbonara-2560x1920.jpg",
+    "selected": false
+  },
+  {
+    "id": 13,
+    "name": "Fish Tacos",
+    "description": "Light and crispy fish fillets served in warm tortillas with fresh toppings like shredded cabbage, pico de gallo, and a creamy, zesty sauce. A perfect balance of textures and flavors.",
+    "instructions": "1. **Prepare fish:** Season firm white fish fillets (e.g., cod, tilapia) with a mix of chili powder, cumin, and salt. Pan-fry or bake until cooked through and lightly golden. 2. **Make sauce:** In a small bowl, whisk together Greek yogurt or sour cream, lime juice, and a pinch of cayenne pepper. 3. **Prepare toppings:** Shred cabbage, chop tomatoes and onions for pico de gallo, and dice avocado. 4. **Warm tortillas:** Lightly toast corn or flour tortillas in a dry pan. 5. **Assemble:** Place a piece of fish in each tortilla. Top with shredded cabbage, pico de gallo, and a drizzle of the zesty sauce. Garnish with fresh cilantro and a lime wedge.",
+    "image": "https://burnhard-springlane-gmbh.stream.prepr.io/w_1080/w_2048,format_webp,q_70/2b92ex6y8mgh-776j028nskbc-fish-tacos-titelbild.jpg",
+    "selected": false
+  },
+  {
+    "id": 14,
+    "name": "Vegetarian Lasagna",
+    "description": "A hearty and flavorful layered pasta dish filled with rich tomato sauce, creamy ricotta cheese, and a medley of fresh vegetables. It’s a comforting meal that’s great for a family dinner.",
+    "instructions": "1. **Prepare sauce:** Sauté chopped onions, bell peppers, and zucchini until soft. Add marinara sauce and simmer for 10-15 minutes. 2. **Make ricotta mixture:** In a bowl, mix ricotta cheese with shredded mozzarella, an egg, chopped parsley, and a pinch of salt and pepper. 3. **Assemble lasagna:** Spread a thin layer of sauce on the bottom of a baking dish. Top with a layer of lasagna noodles, then a layer of the ricotta mixture, and a layer of the vegetable sauce. Repeat the layers, finishing with a final layer of sauce and mozzarella cheese. 4. **Bake:** Cover the dish with foil and bake in a preheated oven at 190°C (375°F) for 25 minutes. Uncover and bake for another 10-15 minutes, until the cheese is melted and bubbly.",
+    "image": "https://www.recipetineats.com/tachyon/2019/02/Vegetable-Lasagna_10.jpg?resize=1200%2C1680&zoom=1",
+    "selected": false
+  },
+  {
+    "id": 15,
+    "name": "Pancakes with Berries",
+    "description": "Fluffy, golden pancakes served hot with a colorful medley of fresh berries and a generous drizzle of maple syrup. It's the perfect sweet start to your day.",
+    "instructions": "1. **Mix dry ingredients:** In a large bowl, whisk together flour, sugar, baking powder, and salt. 2. **Mix wet ingredients:** In a separate bowl, whisk together milk, a large egg, and melted butter. 3. **Combine:** Pour the wet ingredients into the dry ingredients and stir until just combined. A few lumps are okay. 4. **Cook:** Heat a lightly oiled griddle or non-stick pan over medium heat. Pour about 1/4 cup of batter for each pancake. Cook for 2-3 minutes, until bubbles form on the surface, then flip and cook for another 1-2 minutes. 5. **Serve:** Stack the pancakes and top with fresh berries and maple syrup.",
+    "image": "https://pinchofyum.com/wp-content/uploads/Taking-a-Bite-of-Blueberry-Pancakes.jpg",
+    "selected": false
+  },
+  {
+    "id": 16,
+    "name": "Mediterranean Buddha Bowl",
+    "description": "A vibrant and satisfying bowl featuring quinoa, roasted chickpeas, cucumber, cherry tomatoes, and kalamata olives. Everything is topped with a creamy and zesty tahini dressing.",
+    "instructions": "1. **Cook quinoa:** Rinse quinoa thoroughly. Cook according to package instructions until tender. 2. **Roast chickpeas:** Toss canned chickpeas with olive oil, paprika, and cumin. Roast in the oven at 200°C (400°F) for 15-20 minutes until crispy. 3. **Prepare dressing:** In a small bowl, whisk together tahini, lemon juice, a little water to thin, minced garlic, and salt. 4. **Assemble the bowl:** Place a base of cooked quinoa in a bowl. Arrange the roasted chickpeas, chopped cucumber, tomatoes, and olives on top. 5. **Serve:** Drizzle generously with the tahini dressing and enjoy.",
+    "image": "https://www.culinaryhill.com/wp-content/uploads/2022/12/Mediterranean-Buddha-Bowl-Culinary-Hill-LR-05.jpg",
+    "selected": false
+  },
+  {
+    "id": 17,
+    "name": "Pesto Pasta with Cherry Tomatoes",
+    "description": "A light and fresh pasta dish coated in a vibrant basil pesto and tossed with sweet cherry tomatoes. It’s an ideal quick lunch or dinner that comes together in the time it takes to boil the pasta.",
+    "instructions": "1. **Cook pasta:** Boil pasta according to package directions in a large pot of salted water. 2. **Prepare tomatoes:** While the pasta cooks, halve or quarter a handful of cherry tomatoes. 3. **Combine:** When the pasta is cooked, drain it, reserving a small amount of the starchy pasta water. Return the hot pasta to the pot. 4. **Add pesto:** Stir in your desired amount of basil pesto. Add a tablespoon or two of the reserved pasta water to help the sauce emulsify and coat the pasta. 5. **Finish:** Stir in the cherry tomatoes. Season with a little salt and pepper if needed. Serve immediately, optionally topped with grated Parmesan cheese.",
+    "image": "https://italianfoodforever.com/wp-content/uploads/2015/07/pestotomatopasta2-1.jpg",
+    "selected": false
+  },
+  {
+    "id": 18,
+    "name": "Black Bean Burgers",
+    "description": "Hearty and flavorful vegetarian burgers made from black beans, breadcrumbs, and a blend of spices. They are a great alternative to traditional burgers and are perfect for a meatless meal.",
+    "instructions": "1. **Mash beans:** In a large bowl, mash canned and rinsed black beans with a fork, leaving some whole for texture. 2. **Add ingredients:** Stir in breadcrumbs, finely chopped onion, minced garlic, chili powder, cumin, and an egg (or flax egg for vegan). Mix until well combined. 3. **Form patties:** Divide the mixture and form into patties. 4. **Cook:** Heat a little oil in a skillet over medium heat. Cook the patties for 3-5 minutes per side, until browned and heated through. Serve on buns with your favorite toppings.",
+    "image": "https://www.eat-this.org/wp-content/uploads/2017/07/Weltbester-Black-Bean-Burger-3-740x493@2x.jpg",
+    "selected": false
+  },
+  {
+    "id": 19,
+    "name": "Sheet Pan Chicken and Veggies",
+    "description": "An easy and convenient one-pan meal that requires minimal cleanup. Juicy chicken pieces and a colorful mix of vegetables are roasted together with a simple seasoning.",
+    "instructions": "1. **Preheat oven:** Preheat your oven to 200°C (400°F). 2. **Prepare ingredients:** Chop chicken breast into bite-sized pieces and cut vegetables like broccoli, bell peppers, and red onion. 3. **Season:** Toss the chicken and vegetables with olive oil, salt, pepper, garlic powder, and paprika on a large baking sheet. 4. **Roast:** Spread everything in a single layer and roast for 20-25 minutes, or until the chicken is cooked and the vegetables are tender.",
+    "image": "https://www.themediterraneandish.com/wp-content/uploads/2023/07/TMD-Greek-sheet-pan-chicken-WEB-11.jpg",
+    "selected": false
+  },
+  {
+    "id": 20,
+    "name": "Creamy Potato Soup",
+    "description": "A rich, velvety, and comforting soup that's perfect for a chilly day. Made with simple ingredients, it has a wonderfully smooth texture and a savory flavor from leeks and potatoes.",
+    "instructions": "1. **Sauté aromatics:** In a large pot, melt butter and add chopped leeks (white and light green parts only) and onions. Cook until softened. Add minced garlic and cook for another minute. 2. **Simmer:** Add cubed potatoes and vegetable or chicken broth. Bring to a boil, then reduce to a simmer and cook for 15-20 minutes, until the potatoes are very tender. 3. **Blend:** Using an immersion blender, blend the soup until smooth and creamy. 4. **Finish:** Stir in a little heavy cream or milk for extra creaminess. Season with salt, pepper, and fresh chives before serving.",
+    "image": "https://sugarspunrun.com/wp-content/uploads/2018/01/Potato-Soup-Recipe-1-of-1-5.jpg",
+    "selected": false
+  },
+  {
+    "id": 21,
+    "name": "Baked Lemon Herb Salmon",
+    "description": "Flaky salmon fillets seasoned with fresh lemon, garlic, and herbs like dill and parsley. Baking it in a foil packet keeps the fish moist and tender, and makes for a quick cleanup.",
+    "instructions": "1. **Prepare foil:** Cut a large piece of aluminum foil. Place a salmon fillet in the center. 2. **Season:** Drizzle the salmon with olive oil and top with minced garlic, lemon slices, and fresh herbs. Season generously with salt and pepper. 3. **Wrap:** Fold the foil over the salmon and seal the edges to create a tight packet. 4. **Bake:** Place the foil packet on a baking sheet and bake in a preheated oven at 200°C (400°F) for 12-15 minutes, or until the salmon is cooked to your liking. Serve with the juices from the packet.",
+    "image": "https://sallysbakingaddiction.com/wp-content/uploads/2015/09/baked-lemon-salmon.jpg",
+    "selected": false
+  },
+  {
+    "id": 22,
+    "name": "Classic Mac and Cheese",
+    "description": "The ultimate comfort food: tender elbow macaroni smothered in a rich, creamy, and cheesy sauce. This recipe is a timeless favorite for all ages.",
+    "instructions": "1. **Cook pasta:** Boil macaroni according to package directions. Drain and set aside. 2. **Make cheese sauce:** In the same pot, melt butter. Whisk in flour to create a roux. Gradually whisk in milk until the sauce is smooth and thickened. 3. **Add cheese:** Reduce heat to low and stir in shredded cheddar cheese and a pinch of mustard powder until the cheese is fully melted. Season with salt and pepper. 4. **Combine:** Add the cooked macaroni to the cheese sauce and stir until every noodle is coated. Serve hot.",
+    "image": "https://www.allrecipes.com/thmb/CanMXBeN-9DZyRSzDxLAoy0w-t8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/238691-Simple-Macaroni-And-Cheese-mfs_006-f7f521c65f894aef85e17bc9125c2c4a.jpg",
+    "selected": false
+  },
+  {
+    "id": 23,
+    "name": "Chicken Tikka Masala",
+    "description": "A popular Indian dish featuring tender pieces of marinated chicken in a creamy, spiced tomato sauce. It’s rich, flavorful, and pairs perfectly with rice or naan bread.",
+    "instructions": "1. **Marinate chicken:** Cut chicken breast into cubes. In a bowl, mix with yogurt, lemon juice, ginger, garlic, and spices like cumin and garam masala. Marinate for at least 30 minutes. 2. **Cook chicken:** In a large skillet, cook the chicken until browned. Remove from the pan. 3. **Make sauce:** Sauté onions and more ginger and garlic. Add tomato purée and spices. Stir in chicken stock and heavy cream. 4. **Simmer:** Add the cooked chicken back to the pan and simmer for 15 minutes to let the flavors meld. Serve with rice.",
+    "image": "https://shibaskitchen.de/wp-content/uploads/2021/06/P1110181-scaled.jpg",
+    "selected": false
+  },
+  {
+    "id": 24,
+    "name": "Chicken and Cheese Quesadillas",
+    "description": "A quick and satisfying meal with crispy tortillas filled with seasoned chicken, melted cheese, and a medley of vegetables. They are easy to customize and great for a simple dinner or snack.",
+    "instructions": "1. **Cook chicken:** Season chicken breast with taco seasoning and cook in a pan until browned and cooked through. Shred the chicken. 2. **Assemble:** Place a tortilla in a dry skillet over medium heat. Sprinkle cheese on one half, then top with shredded chicken and any other fillings like bell peppers or corn. Fold the other half over. 3. **Cook:** Cook for 2-3 minutes per side until the tortilla is golden brown and the cheese is fully melted. Cut into wedges and serve with salsa and sour cream.",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/chicken-quesadillas-lead-668eeac0e860b.jpg?crop=1xw:1xh;center,top&resize=1200:*",
+    "selected": false
+  },
+  {
+    "id": 25,
+    "name": "Beef and Broccoli Stir-fry",
+    "description": "A classic Chinese-American dish with tender strips of beef and crisp broccoli florets in a savory ginger-garlic sauce. It’s a fast and flavorful weeknight meal.",
+    "instructions": "1. **Prepare beef:** Slice beef flank steak thinly against the grain. Marinate with a little soy sauce and cornstarch. 2. **Make sauce:** In a small bowl, whisk together beef broth, soy sauce, oyster sauce, minced ginger, and garlic. 3. **Stir-fry:** In a hot wok or skillet, stir-fry the beef until it is cooked. Remove from the pan. Add broccoli florets to the same pan and stir-fry until crisp-tender. 4. **Combine:** Return the beef to the pan. Pour in the sauce and cook until it thickens. Serve immediately with rice.",
+    "image": "https://natashaskitchen.com/wp-content/uploads/2019/08/Beef-and-Broccoli-2.jpg",
+    "selected": false
+  },
+  {
+    "id": 26,
+    "name": "Caprese Sandwich",
+    "description": "A simple and elegant sandwich that celebrates fresh, quality ingredients. It features layers of creamy mozzarella, ripe tomatoes, and fragrant basil, all drizzled with a rich balsamic glaze.",
+    "instructions": "1. **Prepare ingredients:** Slice fresh mozzarella and ripe tomatoes. Wash fresh basil leaves. 2. **Assemble:** Layer the mozzarella, tomato, and basil on a slice of rustic bread or a roll. 3. **Finish:** Drizzle with olive oil and a sweet balsamic glaze. Season with salt and freshly ground black pepper. Top with the second slice of bread and serve immediately.",
+    "image": "https://cookieandkate.com/images/2020/10/vegetarian-baguette-sandwich-recipe-1.jpg",
+    "selected": false
+  },
+  {
+    "id": 27,
+    "name": "Vegetarian Lentil Bolognese",
+    "description": "A hearty and healthy meatless alternative to the classic Italian bolognese. This rich sauce is made with brown or green lentils, carrots, celery, and a robust tomato base.",
+    "instructions": "1. **Sauté vegetables:** In a pot, sauté chopped onions, carrots, and celery until soft. Add minced garlic and cook for another minute. 2. **Add lentils:** Stir in rinsed lentils and vegetable broth. Bring to a boil, then reduce heat to a simmer and cook for about 20 minutes, until the lentils are tender. 3. **Finish sauce:** Add canned crushed tomatoes, herbs, and a little tomato paste. Continue to simmer for 15-20 minutes, allowing the flavors to deepen. Serve over cooked pasta.",
+    "image": "https://www.feastingathome.com/wp-content/uploads/2021/10/Lentil-Bolognese-16-1024x1536.jpg",
     "selected": false
   }
 ]
