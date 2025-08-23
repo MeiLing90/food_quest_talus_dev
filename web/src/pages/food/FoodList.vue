@@ -13,7 +13,8 @@ const cards = ref(cardsData);
                 :key="index"
                 cols="12" sm="6" md="4" lg="3" xl="2"
                 class="d-flex">
-                <v-card v-if="card.selected" max-width="300" class="w-100"  :href="`foodDetail.html?id=${card.id}`">
+                <v-card v-if="card.selected" max-width="300" class="w-100"  :to="{ name: 'food-detail', params: { id: card.id } }"
+                        link>
                     <img :src="card.image" class="carouselImage w-100 rounded-md" />
                     <v-card-title>{{ card.name }}</v-card-title>
                     <v-card-text>{{ card.description }}</v-card-text>

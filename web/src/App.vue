@@ -1,13 +1,14 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import FoodList from "./pages/food/FoodList.vue";
-import Foodswiper from "./pages/food/FoodSwiper.vue";
-
+import AppNavbar from './components/AppNavbar.vue'
 </script>
 
 <template>
-  <foodswiper></foodswiper>
-  <food-list></food-list>
+  <v-app>
+    <AppNavbar />
+    <v-main>
+      <RouterView />
+    </v-main>
+  </v-app>
 </template>
 
 <style>
