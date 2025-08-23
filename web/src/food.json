@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Spaghetti Bolognese",
+    "description": "Text Text Text Text Text Text Text Text Text Text Text Text",
+    "image": "https://images.ctfassets.net/uexfe9h31g3m/6QtnhruEFi8qgEyYAICkyS/ab01e9b1da656f35dd1a721c810162a0/Spaghetti_bolognese_4x3_V2_LOW_RES.jpg?w=2000&h=2000&fm=webp&fit=thumb&q=100",
+    "selected": false
+  },
+  {
+    "id": 2,
+    "name": "Tomatenrisotto",
+    "description": "Text Text Text Text Text Text Text Text Text Text Text Text",
+    "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2160,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2019/12/LM200910_59_Tomatenrisotto-2560x1707.jpg",
+    "selected": false
+  },
+  {
+    "id": 3,
+    "name": "Honig-Pouletgeschnetzeltes mit Gemüse",
+    "description": "Text Text Text Text Text Text Text Text Text Text Text Text",
+    "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2160,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2020/10/KO2020_SBLV_78_Honig-Pouletgeschnetzeltes_mit_Gemu%E2%95%A0%C3%AAse.jpg",
+    "selected": false
+  },
+  {
+    "id": 4,
+    "name": "Linsen-Dal",
+    "description": "Text Text Text Text Text Text Text Text Text Text Text Text",
+    "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2160,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2023/12/SM2023_DIVE_114_linsen-dal-2560x1708.jpg",
+    "selected": false
+  },
+  {
+    "id": 5,
+    "name": "Gnocchi mit Tomatensauce",
+    "description": "Text Text Text Text Text Text Text Text Text Text Text Text",
+    "image": "https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_2160,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2024/03/SM2024_FAMI_01_Gnocchi-mit-Tomatensauce-2560x1708.jpg",
+    "selected": false
+  }
+]
