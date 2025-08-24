@@ -5,9 +5,10 @@ import { ref } from 'vue'
 const foodStore = useFoodStore()
 const flipped = ref(false)
 
-function voting() {
-  foodStore.vote(true);
+function voting(val) {
+  foodStore.vote(val);
   flipped.value = false;
+
 }
 </script>
 
@@ -37,7 +38,7 @@ function voting() {
             class="rounded-circle mx-2"
             width="60"
             height="60"
-            @click="foodStore.vote(false)"
+            @click="voting(false)"
         >
           <v-icon>mdi-close</v-icon>
         </v-btn>
@@ -46,7 +47,7 @@ function voting() {
             class="rounded-circle mx-2"
             width="60"
             height="60"
-            @click="voting()"
+            @click="voting(true)"
         >
           <v-icon>mdi-check</v-icon>
         </v-btn>
