@@ -30,25 +30,28 @@ const cookedDates = computed(() => {
   return []; // Return an empty array if card or history is undefined
 });
 
-function handleCooked() {
+async function handleCooked() {
   if (!card.value) return
 
-  // 1) Tell backend a recipe with these tags was cooked
-  fetch('/api/events/recipe-cooked', {
+  // 1) Tell backend a recipe with these tags was cooked (await this!)
+  await fetch('/api/events/recipe-cooked', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       recipeId: card.value.id,
-      tags: card.value.tags || []     // ← at least one tag overlap triggers quest updates
+      tags: card.value.tags || []
     })
-  }).catch(() => {}) // ignore demo errors
+  })
 
-  // 2) Keep your local prototype behavior
+  // 2) ask navbar to re-fetch /api/user (now the points are updated)
+  window.dispatchEvent(new CustomEvent('user:refresh', { detail: { reason: 'recipe-cooked' } }))
+
+  // 3) local prototype behavior
   foodStore.markAsCooked(card.value.id)
 
-  // 3) Navigate as you already do
+  // 4) optional navigation
   if (!card.value.cookedHistory.length) {
-    router.push({ name: 'FoodList' }) // or to { name: 'quests' } if you prefer
+    router.push({ name: 'FoodList' })
   }
 }
 

@@ -57,17 +57,6 @@ async function load() {
   }
 }
 
-// map status -> label/color/icon
-function statusMeta(status) {
-  switch (status) {
-    case 'in-progress':
-      return {text: 'In progress', color: 'amber', icon: 'mdi-progress-clock'}
-    case 'done':
-      return {text: 'Done', color: 'green', icon: 'mdi-check-circle'}
-    default:
-      return {text: 'Not started', color: 'grey', icon: 'mdi-progress-helper'}
-  }
-}
 
 /** NEW: apply server-side rule from meal page (“recipe cooked”) */
 async function applyRecipeCooked(tags = [], recipeId = 'demo') {
@@ -135,9 +124,6 @@ defineExpose({applyRecipeCooked, setQuestProgress, reload: load})
   <v-container class="py-8">
     <div class="d-flex flex-wrap align-center mb-6 ga-3">
       <h2 class="text-h5 mb-0">Quest Board</h2>
-      <v-chip color="primary" variant="flat" prepend-icon="mdi-star" class="ms-2">
-        {{ user.points }} pts
-      </v-chip>
       <v-spacer></v-spacer>
       <v-text-field
           v-model="q"

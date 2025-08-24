@@ -1,23 +1,22 @@
 [
   {
     "id": 1,
-    "name": "Spaghetti Bolognese",
-    "description": "A classic Italian pasta dish made with a rich and hearty meat sauce.  The sauce, or 'ragù,' is slow-cooked for a deep, savory flavor, often including minced beef, onions, carrots, and celery, simmered in a tomato base.",
-    "instructions": "1. **Sauté vegetables:** Heat olive oil in a large pot or Dutch oven. Add chopped onions, carrots, and celery, and cook until softened. 2. **Brown meat:** Add ground beef and cook until browned, breaking it up with a spoon. Drain excess fat. 3. **Simmer the sauce:** Stir in crushed tomatoes, beef broth, a splash of red wine (optional), and herbs like bay leaves and oregano. Bring to a simmer, then reduce heat, cover, and let it cook for at least 1-2 hours to allow flavors to meld. 4. **Cook pasta:** Boil spaghetti in salted water according to package directions. 5. **Serve:** Drain the spaghetti and serve topped with a generous portion of the bolognese sauce and grated Parmesan cheese.",
+    "name": "Margherita Pizza",
+    "description": "Classic Neapolitan-style pizza with a light tomato sauce, fresh mozzarella, basil, and olive oil. Thin, blistered crust; simple, clean flavors.",
+    "instructions": "1. Preheat: Place a pizza stone or inverted sheet in the oven and heat to 250–260°C (475–500°F) for 30 minutes. 2. Sauce: In a bowl, mix crushed tomatoes with a pinch of salt and a splash of olive oil. 3. Shape: On a floured surface, stretch a 220–250 g dough ball to ~28–30 cm. 4. Top: Spread 2–3 tbsp sauce thinly, add torn mozzarella, drizzle olive oil. 5. Bake: Slide onto the hot stone and bake 7–10 minutes until crust is puffed and charred in spots. 6. Finish: Top with fresh basil, a light drizzle of olive oil, and a pinch of salt. Slice and serve.",
     "ingredients": [
-      "Minced beef",
-      "Onion",
-      "Carrots",
-      "Celery",
-      "Crushed tomatoes",
-      "Beef broth",
-      "Spaghetti",
-      "Parmesan cheese"
+      "Pizza dough (store-bought or homemade)",
+      "Crushed tomatoes/passata",
+      "Fresh mozzarella",
+      "Fresh basil leaves",
+      "Olive oil",
+      "Salt",
+      "Flour/semolina for shaping"
     ],
-    "image": "https://images.ctfassets.net/uexfe9h31g3m/6QtnhruEFi8qgEyYAICkyS/ab01e9b1da656f35dd1a721c810162a0/Spaghetti_bolognese_4x3_V2_LOW_RES.jpg?w=2000&h=2000&fm=webp&fit=thumb&q=100",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80",
     "selected": false,
     "cooked": false,
-    "tags": ["meat", "red meat", "high calory", "high carb", "dinner", "comfort food"]
+    "tags": ["pizza", "carbs", "dinner", "comfort food"]
   },
   {
     "id": 2,
@@ -641,5 +640,25 @@
       "vegetables",
       "vegetarian"
     ]
+  },
+  {
+    "id": 28,
+    "name": "Spaghetti Bolognese",
+    "description": "A classic Italian pasta dish made with a rich and hearty meat sauce.  The sauce, or 'ragù,' is slow-cooked for a deep, savory flavor, often including minced beef, onions, carrots, and celery, simmered in a tomato base.",
+    "instructions": "1. **Sauté vegetables:** Heat olive oil in a large pot or Dutch oven. Add chopped onions, carrots, and celery, and cook until softened. 2. **Brown meat:** Add ground beef and cook until browned, breaking it up with a spoon. Drain excess fat. 3. **Simmer the sauce:** Stir in crushed tomatoes, beef broth, a splash of red wine (optional), and herbs like bay leaves and oregano. Bring to a simmer, then reduce heat, cover, and let it cook for at least 1-2 hours to allow flavors to meld. 4. **Cook pasta:** Boil spaghetti in salted water according to package directions. 5. **Serve:** Drain the spaghetti and serve topped with a generous portion of the bolognese sauce and grated Parmesan cheese.",
+    "ingredients": [
+      "Minced beef",
+      "Onion",
+      "Carrots",
+      "Celery",
+      "Crushed tomatoes",
+      "Beef broth",
+      "Spaghetti",
+      "Parmesan cheese"
+    ],
+    "image": "https://images.ctfassets.net/uexfe9h31g3m/6QtnhruEFi8qgEyYAICkyS/ab01e9b1da656f35dd1a721c810162a0/Spaghetti_bolognese_4x3_V2_LOW_RES.jpg?w=2000&h=2000&fm=webp&fit=thumb&q=100",
+    "selected": false,
+    "cooked": false,
+    "tags": ["meat", "red meat", "high calory", "high carb", "dinner", "comfort food"]
   }
 ]

@@ -98,7 +98,7 @@ async function applyRecipeCooked({ recipeId, tags = [] }) {
         const target = Math.max(1, Number(q.targetCount || 1))
         const wasDone = (q.count || 0) >= target
 
-        q.count = Math.max(0, Number(q.count || 0) + 1)      // increment count
+        q.count = Math.min(target, Math.max(0, Number(q.count || 0) + 1))   // increment count
         const { progress, status } = computeFromCount(q)
         q.progress = progress                                  // (optional, but handy)
         q.status   = status
