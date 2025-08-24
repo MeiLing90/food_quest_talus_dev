@@ -51,7 +51,7 @@ onBeforeUnmount(() => {
     <v-spacer />
 
     <!-- Points chip -->
-    <v-chip color="primary" variant="flat" prepend-icon="mdi-star" class="mr-2">
+    <v-chip color="#56AB2F" variant="flat" prepend-icon="mdi-star" class="mr-2">
       {{ points }} pts
     </v-chip>
 
@@ -62,7 +62,7 @@ onBeforeUnmount(() => {
           :key="l.to"
           :to="l.to"
           :variant="isActive(l.to) ? 'flat' : 'text'"
-          :color="isActive(l.to) ? 'primary' : undefined"
+          :color="isActive(l.to) ? '#56AB2F' : undefined"
           class="text-none"
           :prepend-icon="l.icon"
       >
